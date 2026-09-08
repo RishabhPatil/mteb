@@ -28,6 +28,7 @@ from .avcaps_retrieval import (
     AVCapsV2TRetrieval,
     AVCapsVA2TRetrieval,
 )
+from .ave_av_retrieval import AVEA2VRetrieval, AVEV2ARetrieval
 from .avmeme_exam_retrieval import (
     AVMemeExamA2VRetrieval,
     AVMemeExamAT2VRetrieval,
@@ -506,6 +507,8 @@ __all__ = [
     "AVCapsT2VRetrieval",
     "AVCapsV2TRetrieval",
     "AVCapsVA2TRetrieval",
+    "AVEA2VRetrieval",
+    "AVEV2ARetrieval",
     "AVMemeExamA2VRetrieval",
     "AVMemeExamAT2VRetrieval",
     "AVMemeExamT2VARetrieval",
