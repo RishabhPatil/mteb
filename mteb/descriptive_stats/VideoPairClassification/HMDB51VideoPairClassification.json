@@ -1,0 +1,141 @@
+{
+    "test": {
+        "num_samples": 2048,
+        "number_of_characters": null,
+        "unique_pairs": 2048,
+        "text1_statistics": null,
+        "image1_statistics": null,
+        "audio1_statistics": null,
+        "video1_statistics": {
+            "total_duration_seconds": 6540.8,
+            "total_frames": 196224,
+            "min_width": 288,
+            "average_width": 357.05859375,
+            "max_width": 592,
+            "min_height": 240,
+            "average_height": 240.0,
+            "max_height": 240,
+            "min_duration_seconds": 0.7333333333333333,
+            "average_duration_seconds": 3.19375,
+            "max_duration_seconds": 21.566666666666666,
+            "unique_videos": 1024,
+            "average_fps": 30.0,
+            "fps": {
+                "30": 2048
+            },
+            "min_resolution": [
+                288,
+                240
+            ],
+            "average_resolution": [
+                357.05859375,
+                240.0
+            ],
+            "max_resolution": [
+                592,
+                240
+            ],
+            "resolutions": {
+                "592x240": 18,
+                "320x240": 1200,
+                "560x240": 114,
+                "360x240": 52,
+                "352x240": 214,
+                "424x240": 48,
+                "300x240": 42,
+                "416x240": 130,
+                "432x240": 64,
+                "480x240": 32,
+                "312x240": 22,
+                "288x240": 38,
+                "348x240": 6,
+                "420x240": 10,
+                "292x240": 6,
+                "304x240": 8,
+                "576x240": 12,
+                "428x240": 8,
+                "448x240": 6,
+                "568x240": 2,
+                "440x240": 4,
+                "332x240": 4,
+                "316x240": 2,
+                "496x240": 2,
+                "308x240": 2,
+                "452x240": 2
+            }
+        },
+        "text2_statistics": null,
+        "image2_statistics": null,
+        "audio2_statistics": null,
+        "video2_statistics": {
+            "total_duration_seconds": 6546.7,
+            "total_frames": 196401,
+            "min_width": 288,
+            "average_width": 358.6875,
+            "max_width": 592,
+            "min_height": 240,
+            "average_height": 240.0,
+            "max_height": 240,
+            "min_duration_seconds": 0.7333333333333333,
+            "average_duration_seconds": 3.196630859375,
+            "max_duration_seconds": 21.566666666666666,
+            "unique_videos": 1135,
+            "average_fps": 30.0,
+            "fps": {
+                "30": 2048
+            },
+            "min_resolution": [
+                288,
+                240
+            ],
+            "average_resolution": [
+                358.6875,
+                240.0
+            ],
+            "max_resolution": [
+                592,
+                240
+            ],
+            "resolutions": {
+                "320x240": 1194,
+                "432x240": 91,
+                "352x240": 217,
+                "292x240": 3,
+                "480x240": 34,
+                "416x240": 114,
+                "360x240": 32,
+                "592x240": 29,
+                "304x240": 5,
+                "560x240": 107,
+                "288x240": 49,
+                "428x240": 10,
+                "424x240": 58,
+                "348x240": 9,
+                "300x240": 36,
+                "312x240": 21,
+                "448x240": 8,
+                "576x240": 13,
+                "332x240": 3,
+                "440x240": 5,
+                "420x240": 5,
+                "452x240": 3,
+                "308x240": 1,
+                "568x240": 1
+            }
+        },
+        "labels_statistics": {
+            "min_labels_per_text": 1,
+            "average_label_per_text": 1.0,
+            "max_labels_per_text": 1,
+            "unique_labels": 2,
+            "labels": {
+                "1": {
+                    "count": 1024
+                },
+                "0": {
+                    "count": 1024
+                }
+            }
+        }
+    }
+}

@@ -6,6 +6,7 @@ from .ave_dataset_pc import (
 from .breakfast_pc import BreakfastPairClassification
 from .cremad import CREMADPairClassification
 from .emid_pc import EMIDPairClassification
+from .hmdb51_pc import HMDB51VideoPairClassification
 from .human_animal_cartoon_pc import (
     HumanAnimalCartoonVAPairClassification,
     HumanAnimalCartoonVPairClassification,
@@ -44,6 +45,7 @@ __all__ = [
     "BreakfastPairClassification",
     "CREMADPairClassification",
     "EMIDPairClassification",
+    "HMDB51VideoPairClassification",
     "HumanAnimalCartoonVAPairClassification",
     "HumanAnimalCartoonVPairClassification",
     "LegalBenchPC",
