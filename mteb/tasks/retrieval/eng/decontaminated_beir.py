@@ -1,21 +1,26 @@
 from __future__ import annotations
 
+from typing import Any
+
 from mteb.abstasks.retrieval import AbsTaskRetrieval
 from mteb.abstasks.task_metadata import TaskMetadata
 
-_DECONTAMINATED_BEIR_CITATION = r"""@inproceedings{thakur2021beir,
+_DECONTAMINATED_BEIR_CITATION = r"""
+@article{lighton2024decontaminated_beir,
+  author = {Raphaël Stylianou and LightOn AI},
+  title = {Decontaminated BEIR: Evaluating Dense and Late-Interaction Retrievers without Contamination},
+  url = {https://huggingface.co/blog/lightonai/denseon-lateon#decontaminated-beir},
+  year = {2024},
+}
+
+@inproceedings{thakur2021beir,
   author = {Nandan Thakur and Nils Reimers and Andreas R{\"u}ckl{\'e} and Abhishek Srivastava and Iryna Gurevych},
   booktitle = {Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 2)},
   title = {{BEIR}: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models},
   url = {https://openreview.net/forum?id=wCu6T5xFjeJ},
   year = {2021},
 }
-@article{lighton2024decontaminated_beir,
-  author = {Raphaël Stylianou and LightOn AI},
-  title = {Decontaminated BEIR: Evaluating Dense and Late-Interaction Retrievers without Contamination},
-  url = {https://huggingface.co/blog/lightonai/denseon-lateon#decontaminated-beir},
-  year = {2024},
-}"""
+"""
 
 
 class ArguAnaDecontaminated(AbsTaskRetrieval):
@@ -169,7 +174,7 @@ class SciDocsDecontaminated(AbsTaskRetrieval):
         },
     )
 
-    def dataset_transform(self, num_proc: int | None = None) -> None:
+    def dataset_transform(self, num_proc: int | None = None, **kwargs: Any) -> None:
         """Drop the explicit negatives SCIDOCS ships in its qrels.
 
         SCIDOCS qrels carry score-0 rows for non-cited papers. Keeping them
