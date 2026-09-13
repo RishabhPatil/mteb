@@ -68,8 +68,7 @@ class MetaWorldMT50V2IRetrieval(AbsTaskRetrieval):
         description=(
             "Video-to-image retrieval over robot manipulation episodes: given "
             "a manipulation video, retrieve goal-state images (final frames "
-            "of held-out episodes) of the same task. "
-            + _METAWORLD_DESCRIPTION_TAIL
+            "of held-out episodes) of the same task. " + _METAWORLD_DESCRIPTION_TAIL
         ),
         reference="https://meta-world.github.io/",
         dataset={
