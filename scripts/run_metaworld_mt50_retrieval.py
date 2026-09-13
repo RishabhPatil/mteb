@@ -54,9 +54,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     model = get_model(args.model, device=args.device)
-    evaluation = MTEB(
-        tasks=[MetaWorldMT50I2VRetrieval(), MetaWorldMT50V2IRetrieval()]
-    )
+    evaluation = MTEB(tasks=[MetaWorldMT50I2VRetrieval(), MetaWorldMT50V2IRetrieval()])
     evaluation.run(
         model,
         output_folder=args.output_folder,
